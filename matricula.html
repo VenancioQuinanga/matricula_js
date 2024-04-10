@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tabela de informações</title>
+    </head>
+    <body>
+<main	class="container	mb-4">
+    <div	class="jumbotron	bg-dark	header-matricula	text-light	mt-3">
+        <div	class="container">
+            <h1>Escolher cursos</h1>
+            <p	class="lead">Escolha	os	cursos no qual gostaria	de	se	matricular</p>
+        </div>
+    </div>
+    <table	class="table	table-hover	rounded-top">
+        <thead	class="thead-dark">
+            <tr>
+                <th scope="col"></th>
+                <th	scope="col">Curso</th>
+                <th	scope="col">Tempo</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input	onclick="adicionaCurso(this)" type="checkbox" name="curso" value="20"></td>
+            <td>Curso de HTML5,CSS3,Javascript</td>
+            <td>30h</td>
+        </tr>
+        <tr>
+            <td><input	onclick="adicionaCurso(this)" type="checkbox" name="curso" value="30"></td>
+            <td>Curso de Base de dados</td>
+            <td>20h</td>
+            </tr>
+            <tr>
+                <td><input	onclick="adicionaCurso(this)" type="checkbox" name="curso" value="12"></td>
+                <td>Curso de Java</td>
+                <td>12h</td>
+            </tr>
+            <tr	class="bg-dark	text-light">
+                <td>Total</td>
+                <td	class="js-total-de-cursos">0	cursos</td>
+                <td	class="js-total-de-horas">0h</td>
+        </tbody>
+    </table>
+    <button	type="button" class="js-botao-matricula	btn	btn-outline-dark	btn-lg	mb-4">Confirmar	Matrícula</button>
+    </main>
+	<script	src="matricula.js"></script>
+
+</body>
+</html>
